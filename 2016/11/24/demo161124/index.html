@@ -11,7 +11,7 @@
 <meta property="og:url" content="http://yoursite.com/2016/11/24/demo161124/index.html">
 <meta property="og:site_name" content="梦之河上 | 一页扁舟">
 <meta property="og:description" content="本来想安装个sqlmap，结果又入系统坑">
-<meta property="og:updated_time" content="2016-11-23T16:42:06.000Z">
+<meta property="og:updated_time" content="2016-11-24T07:58:39.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Mac下安装sqlmap及其文件夹权限问题">
 <meta name="twitter:description" content="本来想安装个sqlmap，结果又入系统坑">
@@ -276,8 +276,12 @@
 <a id="more"></a>
 <p><center></center></p>
 <p><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="http://music.163.com/outchain/player?type=2&id=1674192&auto=1&height=66"></iframe><br></p>
-<h2 id="sqlmap简介："><a href="#sqlmap简介：" class="headerlink" title="sqlmap简介："></a>sqlmap简介：</h2><p><code>SQLmap是一款用来检测与利用SQL注入漏洞的免费开源工具，有一个非常棒的特性，即对检测与利用的自动化处</code></p>
-<h2 id="sqlmap安装（for-mac）"><a href="#sqlmap安装（for-mac）" class="headerlink" title="sqlmap安装（for mac）"></a>sqlmap安装（for mac）</h2><p>sqlmap很早就使用过，不过一直都是在kali linux下面，今天本来想在Mac安装下，Google一下安装方法也很简单。</p>
+<h2 id="sqlmap简介："><a href="#sqlmap简介：" class="headerlink" title="sqlmap简介："></a>sqlmap简介：</h2><blockquote>
+<p>SQLmap是一款用来检测与利用SQL注入漏洞的免费开源工具，有一个非常棒的特性，即对检测与利用的自动化处</p>
+</blockquote>
+<h2 id="sqlmap安装（for-mac）"><a href="#sqlmap安装（for-mac）" class="headerlink" title="sqlmap安装（for mac）"></a>sqlmap安装（for mac）</h2><blockquote>
+<p>sqlmap很早就使用过，不过一直都是在kali linux下面，今天本来想在Mac安装下，Google一下安装方法也很简单。</p>
+</blockquote>
 <p>命令如下：</p>
 <ol>
 <li><code>cd /usr/bin/</code>   </li>
@@ -285,10 +289,12 @@
 <li><code>alias sqlmap=&#39;python /usr/bin/sqlmap-dev/sqlmap.py&#39;</code></li>
 </ol>
 <h3 id="当我们进行到上面第二步的时候，这里会报个错："><a href="#当我们进行到上面第二步的时候，这里会报个错：" class="headerlink" title="当我们进行到上面第二步的时候，这里会报个错："></a>当我们进行到上面第二步的时候，这里会报个错：</h3><p><code>fatal: could not create work tree dir &#39;sqlmap-dev&#39;: Operation not permitted</code></p>
+<blockquote>
 <p>不能创建文件夹</p>
 <p>查看/bin文件夹权限 755 试图修改修改成 777 发现以管理员权限都无法修改。</p>
 <p>谷歌后找到原因如下：</p>
 <p>Macos 自从10.10后系统启用了SIP（System Integerity Protection）导致root用户也没有修改权限，所以我们需要屏蔽掉这个功能，具体做法是：</p>
+</blockquote>
 <ol>
 <li>重启电脑</li>
 <li>command + R 进入recover模式</li>
@@ -314,7 +320,7 @@
         <p><span>本文标题:</span><a href="/2016/11/24/demo161124/">Mac下安装sqlmap及其文件夹权限问题</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 Demo 的个人博客">Demo</a></p>
         <p><span>发布时间:</span>2016年11月24日 - 00时20分</p>
-        <p><span>最后更新:</span>2016年11月24日 - 00时42分</p>
+        <p><span>最后更新:</span>2016年11月24日 - 15时58分</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2016/11/24/demo161124/" title="Mac下安装sqlmap及其文件夹权限问题">http://yoursite.com/2016/11/24/demo161124/</a>
             <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2016/11/24/demo161124/　　作者: Demo" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
