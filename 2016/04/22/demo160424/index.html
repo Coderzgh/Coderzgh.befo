@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Github+Hexo 博客搭建之hexo命令 | 梦之河上 | 一页扁舟</title>
+  <title>MAC 自带Apache 打开后，无法访问127.0.0.1 | 梦之河上 | 一页扁舟</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="原腾讯云的博客不打算维护～">
+  <meta name="description" content="Apache(原站迁移博客)">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Github+Hexo 博客搭建之hexo命令">
-<meta property="og:url" content="http://yoursite.com/2016/08/01/demo/index.html">
+<meta property="og:title" content="MAC 自带Apache 打开后，无法访问127.0.0.1">
+<meta property="og:url" content="http://yoursite.com/2016/04/22/demo160424/index.html">
 <meta property="og:site_name" content="梦之河上 | 一页扁舟">
-<meta property="og:description" content="原腾讯云的博客不打算维护～">
-<meta property="og:updated_time" content="2016-11-19T15:53:08.000Z">
+<meta property="og:description" content="Apache(原站迁移博客)">
+<meta property="og:updated_time" content="2016-11-25T14:41:55.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Github+Hexo 博客搭建之hexo命令">
-<meta name="twitter:description" content="原腾讯云的博客不打算维护～">
+<meta name="twitter:title" content="MAC 自带Apache 打开后，无法访问127.0.0.1">
+<meta name="twitter:description" content="Apache(原站迁移博客)">
   
     <link rel="alternative" href="/atom.xml" title="梦之河上 | 一页扁舟" type="application/atom+xml">
   
@@ -234,11 +234,11 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-demo" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-demo160424" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/08/01/demo/" class="article-date">
-      <time datetime="2016-07-31T16:01:05.000Z" itemprop="datePublished">2016-08-01</time>
+      <a href="/2016/04/22/demo160424/" class="article-date">
+      <time datetime="2016-04-21T16:00:00.000Z" itemprop="datePublished">2016-04-22</time>
 </a>
     </div>
   
@@ -251,7 +251,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Github+Hexo 博客搭建之hexo命令
+      MAC 自带Apache 打开后，无法访问127.0.0.1
     </h1>
   
 
@@ -262,7 +262,7 @@
 
         
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/博客搭建/">博客搭建</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Mac/">Mac</a></li></ul>
     </div>
 
         <div class="clearfix"></div>
@@ -272,22 +272,18 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>原腾讯云的博客不打算维护～</p>
+        <p>Apache(原站迁移博客)</p>
 <a id="more"></a>
-<center><br><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="http://music.163.com/outchain/player?type=2&id=190929&auto=1&height=66"></iframe><br></center>
-
-<p>原博客站：<a href="https://www.icecoa.com" target="_blank" rel="external">网址</a></p>
-<h2 id="Hexo基本常用的命令就四个，而且还可以使用组合命令。基本命令如下："><a href="#Hexo基本常用的命令就四个，而且还可以使用组合命令。基本命令如下：" class="headerlink" title="Hexo基本常用的命令就四个，而且还可以使用组合命令。基本命令如下："></a>Hexo基本常用的命令就四个，而且还可以使用组合命令。基本命令如下：</h2><p><br><br>1.hexo g = hexo generate  #生成</p>
-<p>2.hexo s = hexo server  #启动本地预览</p>
-<p>3.hexo d = hexo deploy  #远程部署</p>
-<p>4.hexo n “文章标题” = hexo new “文章标题”  #新建一篇博文</p>
-<hr>
-<h2 id="组合命令"><a href="#组合命令" class="headerlink" title="组合命令:"></a>组合命令:</h2><p><br></p>
-<ol>
-<li>hexo s -g  #等同先输入hexo g，再输入hexo s</li>
-<li>hexo d -g  #等同先输入hexo g，再输入hexo d</li>
-</ol>
-<p>更多资料: <a href="https://qjzhixing.com/2015/08/26/" target="_blank" rel="external">Hexo搭建</a><br><a href="https://qjzhixing.com/2015/08/26/" target="_blank" rel="external">Hexo博客配置、主题和写作</a></p>
+<p>今天想要在本地搭个web服务器，搜到Mac下自带有Apache ，可是用命令行打开后（sudo apachectl restart），发现并不能访问localhost，所以查了出错日志才找到解决办法，附上出错日志，和命令（apachectl configtest）</p>
+<p><code>AH00526: Syntax error on line 20 of /private/etc/apache2/extra/httpd-mpm.conf:</code></p>
+<p><code>Invalid command ‘LockFile‘, perhaps misspelled or defined by a module not included in the server configuration</code></p>
+<p>解决方法：</p>
+<p>第一步进入以下目录找到httpd-mpm.conf这个文件</p>
+<p><code>/private/etc/apache2/extra/httpd-mpm.conf</code></p>
+<p>第二步在文件中找到LockFile “/private/var/log/apache2/accept.lock”，用#注释掉如下</p>
+<p><code>＃LockFile &quot;/private/var/log/apache2/accept.lock&quot;</code></p>
+<p>第三步重新启动apache服务器</p>
+<p><code>sudo apachectl -k restart</code></p>
 
       
     </div>
@@ -296,13 +292,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2016/08/01/demo/">Github+Hexo 博客搭建之hexo命令</a></p>
+        <p><span>本文标题:</span><a href="/2016/04/22/demo160424/">MAC 自带Apache 打开后，无法访问127.0.0.1</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 Demo 的个人博客">Demo</a></p>
-        <p><span>发布时间:</span>2016年08月01日 - 00时01分</p>
-        <p><span>最后更新:</span>2016年11月19日 - 23时53分</p>
+        <p><span>发布时间:</span>2016年04月22日 - 00时00分</p>
+        <p><span>最后更新:</span>2016年11月25日 - 22时41分</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2016/08/01/demo/" title="Github+Hexo 博客搭建之hexo命令">http://yoursite.com/2016/08/01/demo/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2016/08/01/demo/　　作者: Demo" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2016/04/22/demo160424/" title="MAC 自带Apache 打开后，无法访问127.0.0.1">http://yoursite.com/2016/04/22/demo160424/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2016/04/22/demo160424/　　作者: Demo" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script src="/js/clipboard.min.js"></script>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
@@ -315,18 +311,18 @@
 
 <nav id="article-nav">
   
-    <a href="/2016/08/01/demo160801/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2016/07/13/demo160713/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption"><</strong>
       <div class="article-nav-title">
         
-          Github+Hexo 博客搭建之Markdown语法学习
+          OpenGL 踩坑记
         
       </div>
     </a>
   
   
-    <a href="/2016/07/13/demo160713/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">OpenGL 踩坑记</div>
+    <a href="/2016/02/22/demo160222/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">解决WordPress全站启用HTTPS协议后图片不能正常加载的问题</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -337,7 +333,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo基本常用的命令就四个，而且还可以使用组合命令。基本命令如下："><span class="toc-number">1.</span> <span class="toc-text">Hexo基本常用的命令就四个，而且还可以使用组合命令。基本命令如下：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#组合命令"><span class="toc-number">2.</span> <span class="toc-text">组合命令:</span></a></li></ol>
+    
 </div>
 <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
 
@@ -385,7 +381,7 @@
     
       <div class="duoshuo" id="comments">
     <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="2016/08/01/demo/" data-title="Github+Hexo 博客搭建之hexo命令" data-url="http://yoursite.com/2016/08/01/demo/"></div>
+    <div class="ds-thread" data-thread-key="2016/04/22/demo160424/" data-title="MAC 自带Apache 打开后，无法访问127.0.0.1" data-url="http://yoursite.com/2016/04/22/demo160424/"></div>
     <!-- 多说评论框 end -->
     <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
     <script type="text/javascript">
@@ -408,13 +404,13 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2016/08/01/demo160801/" title="上一篇: Github+Hexo 博客搭建之Markdown语法学习">
+            <a href="/2016/07/13/demo160713/" title="上一篇: OpenGL 踩坑记">
                 <i class="fa fa-angle-left"></i>
             </a>
         
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
         
-            <a href="/2016/07/13/demo160713/" title="下一篇: OpenGL 踩坑记">
+            <a href="/2016/02/22/demo160222/" title="下一篇: 解决WordPress全站启用HTTPS协议后图片不能正常加载的问题">
                 <i class="fa fa-angle-right"></i>
             </a>
         

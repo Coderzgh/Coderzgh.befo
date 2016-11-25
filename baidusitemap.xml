@@ -4,6 +4,40 @@
 
     
   <url>
+    <loc>http://yoursite.com/2016/04/22/demo160424/</loc>
+    <lastmod>2016-11-25T14:41:55.000Z</lastmod>
+    <data>
+        <display>
+        <title>MAC 自带Apache 打开后，无法访问127.0.0.1</title>
+        <pubTime>2016-04-21T16:00:00.000Z</pubTime>
+        
+        <tag>Mac</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2016/02/22/demo160222/</loc>
+    <lastmod>2016-11-25T14:18:31.000Z</lastmod>
+    <data>
+        <display>
+        <title>解决WordPress全站启用HTTPS协议后图片不能正常加载的问题</title>
+        <pubTime>2016-02-21T16:00:00.000Z</pubTime>
+        
+        <tag>WordPress</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2016/07/13/demo160713/</loc>
     <lastmod>2016-11-25T14:03:07.000Z</lastmod>
     <data>

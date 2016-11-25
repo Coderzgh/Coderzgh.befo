@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Github+Hexo 博客搭建之hexo命令 | 梦之河上 | 一页扁舟</title>
+  <title>解决WordPress全站启用HTTPS协议后图片不能正常加载的问题 | 梦之河上 | 一页扁舟</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="原腾讯云的博客不打算维护～">
+  <meta name="description" content="此贴为原WordPress站博客迁移至现github博客">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Github+Hexo 博客搭建之hexo命令">
-<meta property="og:url" content="http://yoursite.com/2016/08/01/demo/index.html">
+<meta property="og:title" content="解决WordPress全站启用HTTPS协议后图片不能正常加载的问题">
+<meta property="og:url" content="http://yoursite.com/2016/02/22/demo160222/index.html">
 <meta property="og:site_name" content="梦之河上 | 一页扁舟">
-<meta property="og:description" content="原腾讯云的博客不打算维护～">
-<meta property="og:updated_time" content="2016-11-19T15:53:08.000Z">
+<meta property="og:description" content="此贴为原WordPress站博客迁移至现github博客">
+<meta property="og:updated_time" content="2016-11-25T14:18:31.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Github+Hexo 博客搭建之hexo命令">
-<meta name="twitter:description" content="原腾讯云的博客不打算维护～">
+<meta name="twitter:title" content="解决WordPress全站启用HTTPS协议后图片不能正常加载的问题">
+<meta name="twitter:description" content="此贴为原WordPress站博客迁移至现github博客">
   
     <link rel="alternative" href="/atom.xml" title="梦之河上 | 一页扁舟" type="application/atom+xml">
   
@@ -234,11 +234,11 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-demo" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-demo160222" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/08/01/demo/" class="article-date">
-      <time datetime="2016-07-31T16:01:05.000Z" itemprop="datePublished">2016-08-01</time>
+      <a href="/2016/02/22/demo160222/" class="article-date">
+      <time datetime="2016-02-21T16:00:00.000Z" itemprop="datePublished">2016-02-22</time>
 </a>
     </div>
   
@@ -251,7 +251,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Github+Hexo 博客搭建之hexo命令
+      解决WordPress全站启用HTTPS协议后图片不能正常加载的问题
     </h1>
   
 
@@ -262,7 +262,7 @@
 
         
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/博客搭建/">博客搭建</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/WordPress/">WordPress</a></li></ul>
     </div>
 
         <div class="clearfix"></div>
@@ -272,22 +272,22 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>原腾讯云的博客不打算维护～</p>
+        <p>此贴为原WordPress站博客迁移至现github博客</p>
 <a id="more"></a>
-<center><br><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="http://music.163.com/outchain/player?type=2&id=190929&auto=1&height=66"></iframe><br></center>
-
-<p>原博客站：<a href="https://www.icecoa.com" target="_blank" rel="external">网址</a></p>
-<h2 id="Hexo基本常用的命令就四个，而且还可以使用组合命令。基本命令如下："><a href="#Hexo基本常用的命令就四个，而且还可以使用组合命令。基本命令如下：" class="headerlink" title="Hexo基本常用的命令就四个，而且还可以使用组合命令。基本命令如下："></a>Hexo基本常用的命令就四个，而且还可以使用组合命令。基本命令如下：</h2><p><br><br>1.hexo g = hexo generate  #生成</p>
-<p>2.hexo s = hexo server  #启动本地预览</p>
-<p>3.hexo d = hexo deploy  #远程部署</p>
-<p>4.hexo n “文章标题” = hexo new “文章标题”  #新建一篇博文</p>
-<hr>
-<h2 id="组合命令"><a href="#组合命令" class="headerlink" title="组合命令:"></a>组合命令:</h2><p><br></p>
-<ol>
-<li>hexo s -g  #等同先输入hexo g，再输入hexo s</li>
-<li>hexo d -g  #等同先输入hexo g，再输入hexo d</li>
-</ol>
-<p>更多资料: <a href="https://qjzhixing.com/2015/08/26/" target="_blank" rel="external">Hexo搭建</a><br><a href="https://qjzhixing.com/2015/08/26/" target="_blank" rel="external">Hexo博客配置、主题和写作</a></p>
+<p>Nginx开启了Https支持，但是在Https打开网页的时候，发现，图片都不能正常的显示出来，看了一下源代码，发现是网页中的图片链接都被写成了HTTP的，导致浏览器出于安全的原因，不再加载图片，导致效果很差，因此需要WordPress同时支持HTTP，HTTPS。</p>
+<p>找到当前主题下的 function.php 文件，编辑之，在里边代码的末尾追加如下代码：</p>
+<p> /<em> 替换图片链接为 https </em>/<br><code>function https_image_replacer($content){
+if( is_ssl() ){
+/*已经验证使用 $_SERVER[&#39;SERVER_NAME&#39;]也可以获取到数据，但是貌似$_SERVER[&#39;HTTP_HOST&#39;]更好一点*/
+$host_name = $_SERVER[&#39;HTTP_HOST&#39;];
+$http_host_name=&#39;http://&#39;.$host_name.&#39;/wp-content/uploads&#39;;
+$https_host_name=&#39;https://&#39;.$host_name.&#39;/wp-content/uploads&#39;;
+$content = str_replace($http_host_name, $https_host_name, $content);
+}
+return $content;
+}
+add_filter(&#39;the_content&#39;, &#39;https_image_replacer&#39;);</code></p>
+<p><a href="https://www.logcg.com/archives/961.html" target="_blank" rel="external">WordPress 开启全站 HTTPS</a></p>
 
       
     </div>
@@ -296,13 +296,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2016/08/01/demo/">Github+Hexo 博客搭建之hexo命令</a></p>
+        <p><span>本文标题:</span><a href="/2016/02/22/demo160222/">解决WordPress全站启用HTTPS协议后图片不能正常加载的问题</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 Demo 的个人博客">Demo</a></p>
-        <p><span>发布时间:</span>2016年08月01日 - 00时01分</p>
-        <p><span>最后更新:</span>2016年11月19日 - 23时53分</p>
+        <p><span>发布时间:</span>2016年02月22日 - 00时00分</p>
+        <p><span>最后更新:</span>2016年11月25日 - 22时18分</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2016/08/01/demo/" title="Github+Hexo 博客搭建之hexo命令">http://yoursite.com/2016/08/01/demo/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2016/08/01/demo/　　作者: Demo" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2016/02/22/demo160222/" title="解决WordPress全站启用HTTPS协议后图片不能正常加载的问题">http://yoursite.com/2016/02/22/demo160222/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2016/02/22/demo160222/　　作者: Demo" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script src="/js/clipboard.min.js"></script>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
@@ -315,20 +315,15 @@
 
 <nav id="article-nav">
   
-    <a href="/2016/08/01/demo160801/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2016/04/22/demo160424/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption"><</strong>
       <div class="article-nav-title">
         
-          Github+Hexo 博客搭建之Markdown语法学习
+          MAC 自带Apache 打开后，无法访问127.0.0.1
         
       </div>
     </a>
   
-  
-    <a href="/2016/07/13/demo160713/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">OpenGL 踩坑记</div>
-      <strong class="article-nav-caption">></strong>
-    </a>
   
 </nav>
 
@@ -337,7 +332,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo基本常用的命令就四个，而且还可以使用组合命令。基本命令如下："><span class="toc-number">1.</span> <span class="toc-text">Hexo基本常用的命令就四个，而且还可以使用组合命令。基本命令如下：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#组合命令"><span class="toc-number">2.</span> <span class="toc-text">组合命令:</span></a></li></ol>
+    
 </div>
 <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
 
@@ -385,7 +380,7 @@
     
       <div class="duoshuo" id="comments">
     <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="2016/08/01/demo/" data-title="Github+Hexo 博客搭建之hexo命令" data-url="http://yoursite.com/2016/08/01/demo/"></div>
+    <div class="ds-thread" data-thread-key="2016/02/22/demo160222/" data-title="解决WordPress全站启用HTTPS协议后图片不能正常加载的问题" data-url="http://yoursite.com/2016/02/22/demo160222/"></div>
     <!-- 多说评论框 end -->
     <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
     <script type="text/javascript">
@@ -408,15 +403,13 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2016/08/01/demo160801/" title="上一篇: Github+Hexo 博客搭建之Markdown语法学习">
+            <a href="/2016/04/22/demo160424/" title="上一篇: MAC 自带Apache 打开后，无法访问127.0.0.1">
                 <i class="fa fa-angle-left"></i>
             </a>
         
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
         
-            <a href="/2016/07/13/demo160713/" title="下一篇: OpenGL 踩坑记">
-                <i class="fa fa-angle-right"></i>
-            </a>
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
     </div>
     <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/11/24/demo161124/">Mac下安装sqlmap及其文件夹权限问题</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/11/19/demo161119/">mac下无法远程桌面连接windows sever2016 base的解决办法</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/10/07/demo161007/">博客添加腾讯404，百度统计和百度sitemap</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/09/26/demo160926/">记录一次网站渗透</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/09/17/demo160917/">无限期拖延症终于要拾起python学习</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/01/demo160801/">Github+Hexo 博客搭建之Markdown语法学习</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/01/demo/">Github+Hexo 博客搭建之hexo命令</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/13/demo160713/">OpenGL 踩坑记</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/04/22/demo160424/">MAC 自带Apache 打开后，无法访问127.0.0.1</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/02/22/demo160222/">解决WordPress全站启用HTTPS协议后图片不能正常加载的问题</a></li></ul>
