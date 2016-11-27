@@ -4,6 +4,23 @@
 
     
   <url>
+    <loc>http://yoursite.com/2016/11/24/demo161124/</loc>
+    <lastmod>2016-11-27T13:37:29.000Z</lastmod>
+    <data>
+        <display>
+        <title>Mac下安装sqlmap及其文件夹权限问题</title>
+        <pubTime>2016-11-23T16:20:36.000Z</pubTime>
+        
+        <tag>Mac</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2016/04/22/demo160424/</loc>
     <lastmod>2016-11-25T14:41:55.000Z</lastmod>
     <data>
@@ -46,23 +63,6 @@
         <pubTime>2016-07-12T16:00:00.000Z</pubTime>
         
         <tag>OpenGL</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2016/11/24/demo161124/</loc>
-    <lastmod>2016-11-24T07:58:39.000Z</lastmod>
-    <data>
-        <display>
-        <title>Mac下安装sqlmap及其文件夹权限问题</title>
-        <pubTime>2016-11-23T16:20:36.000Z</pubTime>
-        
-        <tag>Mac</tag>
          
          
            
