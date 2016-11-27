@@ -2,30 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/2016/11/24/demo161124/</loc>
+    <loc>http://yoursite.com/2016/10/07/demo161007/</loc>
     
-    <lastmod>2016-11-27T13:37:29.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2016/04/22/demo160424/</loc>
-    
-    <lastmod>2016-11-25T14:41:55.000Z</lastmod>
+    <lastmod>2016-11-27T14:02:55.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/2016/02/22/demo160222/</loc>
+    <loc>http://yoursite.com/2016/09/26/demo160926/</loc>
     
-    <lastmod>2016-11-25T14:18:31.000Z</lastmod>
+    <lastmod>2016-11-27T14:00:04.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://yoursite.com/2016/07/13/demo160713/</loc>
     
-    <lastmod>2016-11-25T14:03:07.000Z</lastmod>
+    <lastmod>2016-11-27T13:55:46.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2016/04/22/demo160424/</loc>
+    
+    <lastmod>2016-11-27T13:53:47.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2016/02/22/demo160222/</loc>
+    
+    <lastmod>2016-11-27T13:51:15.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2016/08/01/demo160801/</loc>
+    
+    <lastmod>2016-11-27T13:45:48.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2016/11/24/demo161124/</loc>
+    
+    <lastmod>2016-11-27T13:37:29.000Z</lastmod>
     
   </url>
   
@@ -37,23 +58,9 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/2016/10/07/demo161007/</loc>
-    
-    <lastmod>2016-11-20T10:27:11.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://yoursite.com/2016/11/19/demo161119/</loc>
     
     <lastmod>2016-11-19T16:01:48.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2016/09/26/demo160926/</loc>
-    
-    <lastmod>2016-11-19T15:59:35.000Z</lastmod>
     
   </url>
   
@@ -68,13 +75,6 @@
     <loc>http://yoursite.com/2016/08/01/demo/</loc>
     
     <lastmod>2016-11-19T15:53:08.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2016/08/01/demo160801/</loc>
-    
-    <lastmod>2016-11-19T15:52:01.000Z</lastmod>
     
   </url>
   

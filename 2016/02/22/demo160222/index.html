@@ -11,7 +11,7 @@
 <meta property="og:url" content="http://yoursite.com/2016/02/22/demo160222/index.html">
 <meta property="og:site_name" content="梦之河上 | 一页扁舟">
 <meta property="og:description" content="此贴为原WordPress站博客迁移至现github博客">
-<meta property="og:updated_time" content="2016-11-25T14:18:31.000Z">
+<meta property="og:updated_time" content="2016-11-27T13:51:15.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="解决WordPress全站启用HTTPS协议后图片不能正常加载的问题">
 <meta name="twitter:description" content="此贴为原WordPress站博客迁移至现github博客">
@@ -274,6 +274,8 @@
           
         <p>此贴为原WordPress站博客迁移至现github博客</p>
 <a id="more"></a>
+<center><br><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="http://music.163.com/outchain/player?type=2&id=5257393&auto=1&height=66"></iframe><br></center>
+
 <p>Nginx开启了Https支持，但是在Https打开网页的时候，发现，图片都不能正常的显示出来，看了一下源代码，发现是网页中的图片链接都被写成了HTTP的，导致浏览器出于安全的原因，不再加载图片，导致效果很差，因此需要WordPress同时支持HTTP，HTTPS。</p>
 <p>找到当前主题下的 function.php 文件，编辑之，在里边代码的末尾追加如下代码：</p>
 <p> /<em> 替换图片链接为 https </em>/<br><code>function https_image_replacer($content){
@@ -299,7 +301,7 @@ add_filter(&#39;the_content&#39;, &#39;https_image_replacer&#39;);</code></p>
         <p><span>本文标题:</span><a href="/2016/02/22/demo160222/">解决WordPress全站启用HTTPS协议后图片不能正常加载的问题</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 Demo 的个人博客">Demo</a></p>
         <p><span>发布时间:</span>2016年02月22日 - 00时00分</p>
-        <p><span>最后更新:</span>2016年11月25日 - 22时18分</p>
+        <p><span>最后更新:</span>2016年11月27日 - 21时51分</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2016/02/22/demo160222/" title="解决WordPress全站启用HTTPS协议后图片不能正常加载的问题">http://yoursite.com/2016/02/22/demo160222/</a>
             <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2016/02/22/demo160222/　　作者: Demo" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
