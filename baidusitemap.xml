@@ -4,6 +4,23 @@
 
     
   <url>
+    <loc>http://yoursite.com/2016/09/26/demo160926/</loc>
+    <lastmod>2016-12-04T11:32:08.000Z</lastmod>
+    <data>
+        <display>
+        <title>记录一次网站渗透</title>
+        <pubTime>2016-09-26T13:52:29.000Z</pubTime>
+        
+        <tag>渗透学习</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2016/11/19/demo161119/</loc>
     <lastmod>2016-12-04T11:28:37.000Z</lastmod>
     <data>
@@ -46,23 +63,6 @@
         <pubTime>2016-12-01T10:45:33.000Z</pubTime>
         
         <tag>MAC</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2016/09/26/demo160926/</loc>
-    <lastmod>2016-12-03T13:00:00.000Z</lastmod>
-    <data>
-        <display>
-        <title>记录一次网站渗透</title>
-        <pubTime>2016-09-26T13:52:29.000Z</pubTime>
-        
-        <tag>渗透学习</tag>
          
          
            
