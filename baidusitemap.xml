@@ -4,6 +4,40 @@
 
     
   <url>
+    <loc>http://yoursite.com/2016/12/01/demo161201/</loc>
+    <lastmod>2016-12-04T15:24:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>Macos sierra 和 Win10 的相爱相恨</title>
+        <pubTime>2016-12-01T10:45:33.000Z</pubTime>
+        
+        <tag>MAC</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2016/10/07/demo161007/</loc>
+    <lastmod>2016-12-04T15:10:43.000Z</lastmod>
+    <data>
+        <display>
+        <title>博客添加腾讯404，百度统计和百度sitemap</title>
+        <pubTime>2016-10-07T07:30:16.000Z</pubTime>
+        
+        <tag>博客运维</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2016/09/26/demo160926/</loc>
     <lastmod>2016-12-04T11:32:08.000Z</lastmod>
     <data>
@@ -55,23 +89,6 @@
 
     
   <url>
-    <loc>http://yoursite.com/2016/12/01/demo161201/</loc>
-    <lastmod>2016-12-04T09:34:47.000Z</lastmod>
-    <data>
-        <display>
-        <title>Macos sierra 和 Win10 的相爱相恨</title>
-        <pubTime>2016-12-01T10:45:33.000Z</pubTime>
-        
-        <tag>MAC</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://yoursite.com/2016/06/06/demo160606/</loc>
     <lastmod>2016-12-02T14:07:27.000Z</lastmod>
     <data>
@@ -80,23 +97,6 @@
         <pubTime>2016-06-05T16:00:00.000Z</pubTime>
         
         <tag>proxy</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2016/10/07/demo161007/</loc>
-    <lastmod>2016-11-27T14:02:55.000Z</lastmod>
-    <data>
-        <display>
-        <title>博客添加腾讯404，百度统计和百度sitemap</title>
-        <pubTime>2016-10-07T07:30:16.000Z</pubTime>
-        
-        <tag>博客运维</tag>
          
          
            
