@@ -4,6 +4,23 @@
 
     
   <url>
+    <loc>http://yoursite.com/2016/12/01/demo161201/</loc>
+    <lastmod>2017-01-17T04:08:43.000Z</lastmod>
+    <data>
+        <display>
+        <title>Macos sierra 和 Win10 的相爱相恨</title>
+        <pubTime>2016-12-01T10:45:33.000Z</pubTime>
+        
+        <tag>MAC</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2017/01/01/demo170101/</loc>
     <lastmod>2016-12-31T17:41:07.000Z</lastmod>
     <data>
@@ -97,23 +114,6 @@
         <pubTime>2016-11-23T16:20:36.000Z</pubTime>
         
         <tag>Mac</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2016/12/01/demo161201/</loc>
-    <lastmod>2016-12-04T15:24:18.000Z</lastmod>
-    <data>
-        <display>
-        <title>Macos sierra 和 Win10 的相爱相恨</title>
-        <pubTime>2016-12-01T10:45:33.000Z</pubTime>
-        
-        <tag>MAC</tag>
          
          
            
