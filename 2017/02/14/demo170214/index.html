@@ -3,18 +3,22 @@
 <head>
   <meta charset="utf-8">
   
-  <title>MAC 自带Apache 打开后，无法访问127.0.0.1 | 梦之河上 | 一页扁舟</title>
+  <title>制作一句话木马图片 | 梦之河上 | 一页扁舟</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Apache(原站迁移博客)">
+  <meta name="description" content="用cmd制作一句话图片木马">
 <meta property="og:type" content="article">
-<meta property="og:title" content="MAC 自带Apache 打开后，无法访问127.0.0.1">
-<meta property="og:url" content="http://yoursite.com/2016/04/22/demo160424/index.html">
+<meta property="og:title" content="制作一句话木马图片">
+<meta property="og:url" content="http://yoursite.com/2017/02/14/demo170214/index.html">
 <meta property="og:site_name" content="梦之河上 | 一页扁舟">
-<meta property="og:description" content="Apache(原站迁移博客)">
-<meta property="og:updated_time" content="2016-11-27T13:53:47.000Z">
+<meta property="og:description" content="用cmd制作一句话图片木马">
+<meta property="og:image" content="http://www.muyierdong.com/wp-content/uploads/2015/08/muyierdong.com_2015-08-12_14-09-34.png">
+<meta property="og:image" content="http://www.muyierdong.com/wp-content/uploads/2015/08/muyierdong.com_2015-08-12_14-15-31.jpg">
+<meta property="og:image" content="http://www.muyierdong.com/wp-content/uploads/2015/08/muyierdong.com_2015-08-12_14-17-39.jpg">
+<meta property="og:updated_time" content="2017-02-14T07:54:19.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="MAC 自带Apache 打开后，无法访问127.0.0.1">
-<meta name="twitter:description" content="Apache(原站迁移博客)">
+<meta name="twitter:title" content="制作一句话木马图片">
+<meta name="twitter:description" content="用cmd制作一句话图片木马">
+<meta name="twitter:image" content="http://www.muyierdong.com/wp-content/uploads/2015/08/muyierdong.com_2015-08-12_14-09-34.png">
   
     <link rel="alternative" href="/atom.xml" title="梦之河上 | 一页扁舟" type="application/atom+xml">
   
@@ -234,11 +238,11 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-demo160424" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-demo170214" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/04/22/demo160424/" class="article-date">
-      <time datetime="2016-04-21T16:00:00.000Z" itemprop="datePublished">2016-04-22</time>
+      <a href="/2017/02/14/demo170214/" class="article-date">
+      <time datetime="2017-02-14T07:46:47.000Z" itemprop="datePublished">2017-02-14</time>
 </a>
     </div>
   
@@ -251,7 +255,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      MAC 自带Apache 打开后，无法访问127.0.0.1
+      制作一句话木马图片
     </h1>
   
 
@@ -262,7 +266,7 @@
 
         
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Mac/">Mac</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/渗透测试/">渗透测试</a></li></ul>
     </div>
 
         <div class="clearfix"></div>
@@ -272,21 +276,12 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>Apache(原站迁移博客)</p>
+        <p>用cmd制作一句话图片木马</p>
 <a id="more"></a>
-<center><br><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="http://music.163.com/outchain/player?type=2&id=412519575&auto=1&height=66"></iframe><br></center>
-
-<p>今天想要在本地搭个web服务器，搜到Mac下自带有Apache ，可是用命令行打开后（sudo apachectl restart），发现并不能访问localhost，所以查了出错日志才找到解决办法，附上出错日志，和命令（apachectl configtest）</p>
-<p><code>AH00526: Syntax error on line 20 of /private/etc/apache2/extra/httpd-mpm.conf:</code></p>
-<p><code>Invalid command ‘LockFile‘, perhaps misspelled or defined by a module not included in the server configuration</code></p>
-<p>解决方法：</p>
-<p>第一步进入以下目录找到httpd-mpm.conf这个文件</p>
-<p><code>/private/etc/apache2/extra/httpd-mpm.conf</code></p>
-<p>第二步在文件中找到LockFile “/private/var/log/apache2/accept.lock”，用#注释掉如下</p>
-<p><code>＃LockFile &quot;/private/var/log/apache2/accept.lock&quot;</code></p>
-<p>第三步重新启动apache服务器</p>
-<p><code>sudo apachectl -k restart</code></p>
-
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><h3 id="有些网站我们在拿shell的时候，会要用到上传文件，但是有的时候都会有过滤，如果只是上传-asp-php结尾的文件的话系统是不会给你上传的，那么这个时候我们通常会把一句话放在图片里面，写成1-asp-jpg-1-asp-jpg的格式上传上去，这样上传的时候系统检测是图片，然后在上传之后，会把这个文件当asp文件来处理，那么如何用cmd来制作一句话木马呢。"><a href="#有些网站我们在拿shell的时候，会要用到上传文件，但是有的时候都会有过滤，如果只是上传-asp-php结尾的文件的话系统是不会给你上传的，那么这个时候我们通常会把一句话放在图片里面，写成1-asp-jpg-1-asp-jpg的格式上传上去，这样上传的时候系统检测是图片，然后在上传之后，会把这个文件当asp文件来处理，那么如何用cmd来制作一句话木马呢。" class="headerlink" title="有些网站我们在拿shell的时候，会要用到上传文件，但是有的时候都会有过滤，如果只是上传.asp .php结尾的文件的话系统是不会给你上传的，那么这个时候我们通常会把一句话放在图片里面，写成1.asp;.jpg 1.asp;jpg的格式上传上去，这样上传的时候系统检测是图片，然后在上传之后，会把这个文件当asp文件来处理，那么如何用cmd来制作一句话木马呢。"></a>有些网站我们在拿shell的时候，会要用到上传文件，但是有的时候都会有过滤，如果只是上传.asp .php结尾的文件的话系统是不会给你上传的，那么这个时候我们通常会把一句话放在图片里面，写成1.asp;.jpg 1.asp;jpg的格式上传上去，这样上传的时候系统检测是图片，然后在上传之后，会把这个文件当asp文件来处理，那么如何用cmd来制作一句话木马呢。</h3><h2 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h2><h3 id="首先准备一个图片文件，和一个一句话木马文件如"><a href="#首先准备一个图片文件，和一个一句话木马文件如" class="headerlink" title="首先准备一个图片文件，和一个一句话木马文件如:"></a>首先准备一个图片文件，和一个一句话木马文件如:</h3><p><img src="http://www.muyierdong.com/wp-content/uploads/2015/08/muyierdong.com_2015-08-12_14-09-34.png" alt=""></p>
+<h3 id="准备好之后就打开-运行-cmd，进入下面这个界面，然后cd-进入放置文件的路径，然后输入命令copy-1-jpg-b-1-php-2-jpg-然后回车就系统就会自动把这两个文件组合起来。"><a href="#准备好之后就打开-运行-cmd，进入下面这个界面，然后cd-进入放置文件的路径，然后输入命令copy-1-jpg-b-1-php-2-jpg-然后回车就系统就会自动把这两个文件组合起来。" class="headerlink" title="准备好之后就打开-运行-cmd，进入下面这个界面，然后cd 进入放置文件的路径，然后输入命令copy 1.jpg/b+1.php 2.jpg 然后回车就系统就会自动把这两个文件组合起来。"></a>准备好之后就打开-运行-cmd，进入下面这个界面，然后cd 进入放置文件的路径，然后输入命令copy 1.jpg/b+1.php 2.jpg 然后回车就系统就会自动把这两个文件组合起来。</h3><p><img src="http://www.muyierdong.com/wp-content/uploads/2015/08/muyierdong.com_2015-08-12_14-15-31.jpg" alt=""></p>
+<h3 id="这个时候我们打开两个文件对比一下，用记事本打开，发现2，jpg的内容当中已经把我们的1-php的一句话木马语句已经加加到图片当中去了，但是图片还是可以正常打开的。然而这个2-jpg的一句话木马图片是可以用菜刀链接的。如果在shell里面那么我们就可以直接查看修改他的文件了"><a href="#这个时候我们打开两个文件对比一下，用记事本打开，发现2，jpg的内容当中已经把我们的1-php的一句话木马语句已经加加到图片当中去了，但是图片还是可以正常打开的。然而这个2-jpg的一句话木马图片是可以用菜刀链接的。如果在shell里面那么我们就可以直接查看修改他的文件了" class="headerlink" title="这个时候我们打开两个文件对比一下，用记事本打开，发现2，jpg的内容当中已经把我们的1.php的一句话木马语句已经加加到图片当中去了，但是图片还是可以正常打开的。然而这个2.jpg的一句话木马图片是可以用菜刀链接的。如果在shell里面那么我们就可以直接查看修改他的文件了"></a>这个时候我们打开两个文件对比一下，用记事本打开，发现2，jpg的内容当中已经把我们的1.php的一句话木马语句已经加加到图片当中去了，但是图片还是可以正常打开的。然而这个2.jpg的一句话木马图片是可以用菜刀链接的。如果在shell里面那么我们就可以直接查看修改他的文件了</h3><p><img src="http://www.muyierdong.com/wp-content/uploads/2015/08/muyierdong.com_2015-08-12_14-17-39.jpg" alt=""></p>
+<h3 id="利用cmd的copy命令制作一句话木马文件就这么简单。"><a href="#利用cmd的copy命令制作一句话木马文件就这么简单。" class="headerlink" title="利用cmd的copy命令制作一句话木马文件就这么简单。"></a>利用cmd的copy命令制作一句话木马文件就这么简单。</h3>
       
     </div>
     
@@ -294,13 +289,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2016/04/22/demo160424/">MAC 自带Apache 打开后，无法访问127.0.0.1</a></p>
+        <p><span>本文标题:</span><a href="/2017/02/14/demo170214/">制作一句话木马图片</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 Demo 的个人博客">Demo</a></p>
-        <p><span>发布时间:</span>2016年04月22日 - 00时00分</p>
-        <p><span>最后更新:</span>2016年11月27日 - 21时53分</p>
+        <p><span>发布时间:</span>2017年02月14日 - 15时46分</p>
+        <p><span>最后更新:</span>2017年02月14日 - 15时54分</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2016/04/22/demo160424/" title="MAC 自带Apache 打开后，无法访问127.0.0.1">http://yoursite.com/2016/04/22/demo160424/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2016/04/22/demo160424/　　作者: Demo" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2017/02/14/demo170214/" title="制作一句话木马图片">http://yoursite.com/2017/02/14/demo170214/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2017/02/14/demo170214/　　作者: Demo" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script src="/js/clipboard.min.js"></script>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
@@ -313,18 +308,9 @@
 
 <nav id="article-nav">
   
-    <a href="/2016/06/06/demo160606/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          正向代理与反向代理
-        
-      </div>
-    </a>
   
-  
-    <a href="/2016/02/22/demo160222/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">解决WordPress全站启用HTTPS协议后图片不能正常加载的问题</div>
+    <a href="/2017/01/01/demo170101/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">写下新年的第一篇博客</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -335,7 +321,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#前言"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#有些网站我们在拿shell的时候，会要用到上传文件，但是有的时候都会有过滤，如果只是上传-asp-php结尾的文件的话系统是不会给你上传的，那么这个时候我们通常会把一句话放在图片里面，写成1-asp-jpg-1-asp-jpg的格式上传上去，这样上传的时候系统检测是图片，然后在上传之后，会把这个文件当asp文件来处理，那么如何用cmd来制作一句话木马呢。"><span class="toc-number">1.1.</span> <span class="toc-text">有些网站我们在拿shell的时候，会要用到上传文件，但是有的时候都会有过滤，如果只是上传.asp .php结尾的文件的话系统是不会给你上传的，那么这个时候我们通常会把一句话放在图片里面，写成1.asp;.jpg 1.asp;jpg的格式上传上去，这样上传的时候系统检测是图片，然后在上传之后，会把这个文件当asp文件来处理，那么如何用cmd来制作一句话木马呢。</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#方法"><span class="toc-number">2.</span> <span class="toc-text">方法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#首先准备一个图片文件，和一个一句话木马文件如"><span class="toc-number">2.1.</span> <span class="toc-text">首先准备一个图片文件，和一个一句话木马文件如:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#准备好之后就打开-运行-cmd，进入下面这个界面，然后cd-进入放置文件的路径，然后输入命令copy-1-jpg-b-1-php-2-jpg-然后回车就系统就会自动把这两个文件组合起来。"><span class="toc-number">2.2.</span> <span class="toc-text">准备好之后就打开-运行-cmd，进入下面这个界面，然后cd 进入放置文件的路径，然后输入命令copy 1.jpg/b+1.php 2.jpg 然后回车就系统就会自动把这两个文件组合起来。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#这个时候我们打开两个文件对比一下，用记事本打开，发现2，jpg的内容当中已经把我们的1-php的一句话木马语句已经加加到图片当中去了，但是图片还是可以正常打开的。然而这个2-jpg的一句话木马图片是可以用菜刀链接的。如果在shell里面那么我们就可以直接查看修改他的文件了"><span class="toc-number">2.3.</span> <span class="toc-text">这个时候我们打开两个文件对比一下，用记事本打开，发现2，jpg的内容当中已经把我们的1.php的一句话木马语句已经加加到图片当中去了，但是图片还是可以正常打开的。然而这个2.jpg的一句话木马图片是可以用菜刀链接的。如果在shell里面那么我们就可以直接查看修改他的文件了</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#利用cmd的copy命令制作一句话木马文件就这么简单。"><span class="toc-number">2.4.</span> <span class="toc-text">利用cmd的copy命令制作一句话木马文件就这么简单。</span></a></li></ol></li></ol>
 </div>
 <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
 
@@ -383,7 +369,7 @@
     
       <div class="duoshuo" id="comments">
     <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="2016/04/22/demo160424/" data-title="MAC 自带Apache 打开后，无法访问127.0.0.1" data-url="http://yoursite.com/2016/04/22/demo160424/"></div>
+    <div class="ds-thread" data-thread-key="2017/02/14/demo170214/" data-title="制作一句话木马图片" data-url="http://yoursite.com/2017/02/14/demo170214/"></div>
     <!-- 多说评论框 end -->
     <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
     <script type="text/javascript">
@@ -406,13 +392,11 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2016/06/06/demo160606/" title="上一篇: 正向代理与反向代理">
-                <i class="fa fa-angle-left"></i>
-            </a>
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
         
-            <a href="/2016/02/22/demo160222/" title="下一篇: 解决WordPress全站启用HTTPS协议后图片不能正常加载的问题">
+            <a href="/2017/01/01/demo170101/" title="下一篇: 写下新年的第一篇博客">
                 <i class="fa fa-angle-right"></i>
             </a>
         
