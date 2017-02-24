@@ -4,14 +4,14 @@
 
     
   <url>
-    <loc>http://yoursite.com/2017/02/23/demo170223/</loc>
-    <lastmod>2017-02-24T06:36:33.000Z</lastmod>
+    <loc>http://yoursite.com/2017/02/16/demo170216/</loc>
+    <lastmod>2017-02-24T06:51:05.000Z</lastmod>
     <data>
         <display>
-        <title>Servlet3.0特性</title>
-        <pubTime>2017-02-23T13:37:37.000Z</pubTime>
+        <title>信息收集之Google hacking</title>
+        <pubTime>2017-02-16T07:16:38.000Z</pubTime>
         
-        <tag>java web开发</tag>
+        <tag>信息收集</tag>
          
          
            
@@ -21,14 +21,14 @@
 
     
   <url>
-    <loc>http://yoursite.com/2017/02/16/demo170216/</loc>
-    <lastmod>2017-02-23T13:57:03.000Z</lastmod>
+    <loc>http://yoursite.com/2017/02/23/demo170223/</loc>
+    <lastmod>2017-02-24T06:41:28.000Z</lastmod>
     <data>
         <display>
-        <title>信息收集之Google hacking</title>
-        <pubTime>2017-02-16T07:16:38.000Z</pubTime>
+        <title>Servlet3.0特性</title>
+        <pubTime>2017-02-23T13:37:37.000Z</pubTime>
         
-        <tag>信息收集</tag>
+        <tag>java web开发</tag>
          
          
            
