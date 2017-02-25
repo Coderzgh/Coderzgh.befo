@@ -3,18 +3,20 @@
 <head>
   <meta charset="utf-8">
   
-  <title>无限期拖延症终于要拾起python学习 | 梦之河上 | 一页扁舟</title>
+  <title>关于博客的SSH | 梦之河上 | 一页扁舟</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="记录学习点滴～">
+  <meta name="description" content="关于hexo博客问题">
 <meta property="og:type" content="article">
-<meta property="og:title" content="无限期拖延症终于要拾起python学习">
-<meta property="og:url" content="http://yoursite.com/2016/09/17/demo160917/index.html">
+<meta property="og:title" content="关于博客的SSH">
+<meta property="og:url" content="http://yoursite.com/2017/02/26/demo170226/index.html">
 <meta property="og:site_name" content="梦之河上 | 一页扁舟">
-<meta property="og:description" content="记录学习点滴～">
-<meta property="og:updated_time" content="2016-12-06T08:51:32.000Z">
+<meta property="og:description" content="关于hexo博客问题">
+<meta property="og:image" content="https://segmentfault.com/img/bVdOio">
+<meta property="og:updated_time" content="2017-02-25T16:34:59.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="无限期拖延症终于要拾起python学习">
-<meta name="twitter:description" content="记录学习点滴～">
+<meta name="twitter:title" content="关于博客的SSH">
+<meta name="twitter:description" content="关于hexo博客问题">
+<meta name="twitter:image" content="https://segmentfault.com/img/bVdOio">
   
     <link rel="alternative" href="/atom.xml" title="梦之河上 | 一页扁舟" type="application/atom+xml">
   
@@ -234,11 +236,11 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-demo160917" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-demo170226" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/09/17/demo160917/" class="article-date">
-      <time datetime="2016-09-17T15:02:24.000Z" itemprop="datePublished">2016-09-17</time>
+      <a href="/2017/02/26/demo170226/" class="article-date">
+      <time datetime="2017-02-25T16:12:51.000Z" itemprop="datePublished">2017-02-26</time>
 </a>
     </div>
   
@@ -251,7 +253,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      无限期拖延症终于要拾起python学习
+      关于博客的SSH
     </h1>
   
 
@@ -262,7 +264,7 @@
 
         
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/学习纪录/">学习纪录</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/博客运维/">博客运维</a></li></ul>
     </div>
 
         <div class="clearfix"></div>
@@ -272,15 +274,25 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>记录学习点滴～</p>
+        <p>关于hexo博客问题</p>
 <a id="more"></a>
-<!--<center>
-<video src='http://ohnjxnr79.bkt.clouddn.com/%E5%91%A8%E6%9D%B0%E5%80%AB%20Jay%20Chou%E3%80%90%E6%98%8E%E6%98%8E%E5%B0%B1%20Ming%20Ming%20Jiu%E3%80%91Official%20MV.mp4' type='video/mp4' controls='controls' autoplay="autoplay" width='100%' height='100%'>
-</video>
-</center>
-<br>-->
-<h2 id="python"><a href="#python" class="headerlink" title="python"></a>python</h2><p>测试</p>
-
+<h2 id="最近在本地提交博客总是被拒"><a href="#最近在本地提交博客总是被拒" class="headerlink" title="最近在本地提交博客总是被拒"></a>最近在本地提交博客总是被拒</h2><h3 id="我的私钥是采用默认的id-rsa命名的，不知道为什么最近突然出现博客不能提交，被公钥拒绝的问题，每次都需要ssh-add上id-rsa，我就想怎样才能不用每次都要写一遍，于是就有了以下答案原文的摘录（记录学习和备忘）"><a href="#我的私钥是采用默认的id-rsa命名的，不知道为什么最近突然出现博客不能提交，被公钥拒绝的问题，每次都需要ssh-add上id-rsa，我就想怎样才能不用每次都要写一遍，于是就有了以下答案原文的摘录（记录学习和备忘）" class="headerlink" title="我的私钥是采用默认的id_rsa命名的，不知道为什么最近突然出现博客不能提交，被公钥拒绝的问题，每次都需要ssh-add上id_rsa，我就想怎样才能不用每次都要写一遍，于是就有了以下答案原文的摘录（记录学习和备忘）"></a>我的私钥是采用默认的id_rsa命名的，不知道为什么最近突然出现博客不能提交，被公钥拒绝的问题，每次都需要ssh-add上id_rsa，我就想怎样才能不用每次都要写一遍，于是就有了以下答案原文的摘录（记录学习和备忘）</h3><blockquote>
+<p>首先我得说和 ssh 相关的一切机制的确比较复杂，很容易让人晕头转向，如果你想彻底掌握这个知识体系就必须系统的学习一下相关的知识。所以 first thing first，我推荐一本书给你，不妨抽时间把它一劳永逸了：</p>
+<p><a href="http://book.douban.com/subject/2299605/" target="_blank" rel="external">SSH, The Secure Shell</a>，这本书的第一版有中文的。</p>
+<p>接着说你的这个特定的问题。</p>
+<p>你首先得了解一件事：ssh-add 这个命令不是用来永久性的记住你所使用的私钥的。实际上，它的作用只是把你指定的私钥添加到 ssh-agent 所管理的一个 session 当中。而 ssh-agent 是一个用于存储私钥的临时性的 session 服务，也就是说当你重启之后，ssh-agent 服务也就重置了。</p>
+<p>如果是为了永久记住对应的私钥是哪个，我们不能依赖 ssh-agent 服务。能依赖什么则取决于以下哪些方案适合你的使用场景。</p>
+<p><b>使用某种安全的秘钥管理机制</b></p>
+<p>你没有在问题里描述你所使用的操作系统，所以我以我日常使用的 Mac OS X 为例。Mac 系统内置了一个 Keychain 的服务及其管理程序，可以方便的帮你管理各种秘钥，其中包括 ssh 秘钥。ssh-add 默认将制定的秘钥添加在当前运行的 ssh-agent 服务中，但是你可以改变这个默认行为让它添加到 keychain 服务中，让 Mac 来帮你记住、管理并保障这些秘钥的安全性。</p>
+<p>你所要做的就是执行下面的命令：</p>
+<pre><code>$ ssh-add -K [path/to/your/ssh-key]
+</code></pre><p>之后，其他的程序请求 ssh 秘钥的时候，会通过 Keychain 服务来请求。下面的截图里你可以看到我当前的机器上 Keychain 为我管理的有关 ssh 的秘钥，这其中包括我自己生成的四个，以及 Github Client App 自己使用的一个——前者几个都是供 ssh 相关的命令所使用，而后者则指明了仅供 Github.app 这个应用程序使用。 另外，它们都是 login keychains 也就是只有当前用户登录之后才会生效的，换了用户或是未登录状态是不能使用的，这就是 Keychain 服务所帮你做的事情。</p>
+<p><center><br><img src="https://segmentfault.com/img/bVdOio" alt=""><br></center><br><b>有没有简单点的办法？</b></p>
+<p>有。如果 ssh-add 已经可以满足你的要求（除了启动以后还要再来一遍以外），那么你完全可以用脚本自动化这件事。简单地把你输入的 ssh-add 命令的内容写进 .bashrc 或 .bash_profile（或其他任何你使用的 shell 环境配置文件）中去，这样只要你打开终端，就等于自动做了这件事情。</p>
+<p>不过如我之前所说，这个机制是依赖 ssh-agent 服务的，并且只能在终端下有效。而用 Keychain 机制的话，是整个系统内都有效的（包括不依赖终端的应用程序）并且无需开启 ssh-agent 服务。</p>
+<p>最后 Keychain 服务不是只有 Mac 才有的，我刚才搜索了一下，Windows 和 各种 Linux 都有对应的机制，不过我没用过，只能以 Mac 为例了。了解了这些概念，相信你可以自己查得到具体的方法。</p>
+</blockquote>
+<h3 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h3><h4 id="一时没有想起来可以在-bashrc-或-bash-profile添加，但是由于这条shell是需要管理员权限的，我又尝试写个能自动填充密码的脚本，但是由于shell（只学了其中bash的皮毛）学习的不全面不深入，还是失败了。"><a href="#一时没有想起来可以在-bashrc-或-bash-profile添加，但是由于这条shell是需要管理员权限的，我又尝试写个能自动填充密码的脚本，但是由于shell（只学了其中bash的皮毛）学习的不全面不深入，还是失败了。" class="headerlink" title="一时没有想起来可以在.bashrc 或 .bash_profile添加，但是由于这条shell是需要管理员权限的，我又尝试写个能自动填充密码的脚本，但是由于shell（只学了其中bash的皮毛）学习的不全面不深入，还是失败了。"></a>一时没有想起来可以在.bashrc 或 .bash_profile添加，但是由于这条shell是需要管理员权限的，我又尝试写个能自动填充密码的脚本，但是由于shell（只学了其中bash的皮毛）学习的不全面不深入，还是失败了。</h4>
       
     </div>
     
@@ -288,13 +300,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2016/09/17/demo160917/">无限期拖延症终于要拾起python学习</a></p>
+        <p><span>本文标题:</span><a href="/2017/02/26/demo170226/">关于博客的SSH</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 Demo 的个人博客">Demo</a></p>
-        <p><span>发布时间:</span>2016年09月17日 - 23时02分</p>
-        <p><span>最后更新:</span>2016年12月06日 - 16时51分</p>
+        <p><span>发布时间:</span>2017年02月26日 - 00时12分</p>
+        <p><span>最后更新:</span>2017年02月26日 - 00时34分</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2016/09/17/demo160917/" title="无限期拖延症终于要拾起python学习">http://yoursite.com/2016/09/17/demo160917/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2016/09/17/demo160917/　　作者: Demo" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2017/02/26/demo170226/" title="关于博客的SSH">http://yoursite.com/2017/02/26/demo170226/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2017/02/26/demo170226/　　作者: Demo" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script src="/js/clipboard.min.js"></script>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
@@ -307,18 +319,9 @@
 
 <nav id="article-nav">
   
-    <a href="/2016/09/26/demo160926/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          记录一次网站渗透
-        
-      </div>
-    </a>
   
-  
-    <a href="/2016/08/01/demo160801/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Github+Hexo 博客搭建之Markdown语法学习</div>
+    <a href="/2017/02/25/demo170225/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Intellij idea创建javaWeb:实现 JSP/Servlet</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -329,7 +332,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#python"><span class="toc-number">1.</span> <span class="toc-text">python</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#最近在本地提交博客总是被拒"><span class="toc-number">1.</span> <span class="toc-text">最近在本地提交博客总是被拒</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#我的私钥是采用默认的id-rsa命名的，不知道为什么最近突然出现博客不能提交，被公钥拒绝的问题，每次都需要ssh-add上id-rsa，我就想怎样才能不用每次都要写一遍，于是就有了以下答案原文的摘录（记录学习和备忘）"><span class="toc-number">1.1.</span> <span class="toc-text">我的私钥是采用默认的id_rsa命名的，不知道为什么最近突然出现博客不能提交，被公钥拒绝的问题，每次都需要ssh-add上id_rsa，我就想怎样才能不用每次都要写一遍，于是就有了以下答案原文的摘录（记录学习和备忘）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#总结："><span class="toc-number">1.2.</span> <span class="toc-text">总结：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#一时没有想起来可以在-bashrc-或-bash-profile添加，但是由于这条shell是需要管理员权限的，我又尝试写个能自动填充密码的脚本，但是由于shell（只学了其中bash的皮毛）学习的不全面不深入，还是失败了。"><span class="toc-number">1.2.1.</span> <span class="toc-text">一时没有想起来可以在.bashrc 或 .bash_profile添加，但是由于这条shell是需要管理员权限的，我又尝试写个能自动填充密码的脚本，但是由于shell（只学了其中bash的皮毛）学习的不全面不深入，还是失败了。</span></a></li></ol></li></ol></li></ol>
 </div>
 <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
 
@@ -377,7 +380,7 @@
     
       <div class="duoshuo" id="comments">
     <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="2016/09/17/demo160917/" data-title="无限期拖延症终于要拾起python学习" data-url="http://yoursite.com/2016/09/17/demo160917/"></div>
+    <div class="ds-thread" data-thread-key="2017/02/26/demo170226/" data-title="关于博客的SSH" data-url="http://yoursite.com/2017/02/26/demo170226/"></div>
     <!-- 多说评论框 end -->
     <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
     <script type="text/javascript">
@@ -400,13 +403,11 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2016/09/26/demo160926/" title="上一篇: 记录一次网站渗透">
-                <i class="fa fa-angle-left"></i>
-            </a>
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
         
-            <a href="/2016/08/01/demo160801/" title="下一篇: Github+Hexo 博客搭建之Markdown语法学习">
+            <a href="/2017/02/25/demo170225/" title="下一篇: Intellij idea创建javaWeb:实现 JSP/Servlet">
                 <i class="fa fa-angle-right"></i>
             </a>
         
