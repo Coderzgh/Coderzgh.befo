@@ -1,7 +1,5 @@
 ---
-
-title: Hexo博客说明
-
+<center>Hexo博客说明</center>
 ---
 
 ### <i>CS狗一枚，考研党。</i>
