@@ -4,6 +4,23 @@
 
     
   <url>
+    <loc>http://yoursite.com/2017/02/23/demo170223/</loc>
+    <lastmod>2017-02-26T14:29:21.000Z</lastmod>
+    <data>
+        <display>
+        <title>Servlet3.0特性</title>
+        <pubTime>2017-02-23T13:37:37.000Z</pubTime>
+        
+        <tag>java web开发</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2016/01/11/demo160110/</loc>
     <lastmod>2017-02-26T14:28:04.000Z</lastmod>
     <data>
@@ -63,23 +80,6 @@
         <pubTime>2017-02-16T07:16:38.000Z</pubTime>
         
         <tag>信息收集</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2017/02/23/demo170223/</loc>
-    <lastmod>2017-02-24T06:41:28.000Z</lastmod>
-    <data>
-        <display>
-        <title>Servlet3.0特性</title>
-        <pubTime>2017-02-23T13:37:37.000Z</pubTime>
-        
-        <tag>java web开发</tag>
          
          
            
