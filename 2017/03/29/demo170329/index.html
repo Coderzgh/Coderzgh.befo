@@ -3,21 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>记录一次网站渗透 | 梦之河上 | 一页扁舟</title>
+  <title>Mac下重装Mysql | 梦之河上 | 一页扁舟</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="每个人心中都有个黑客梦">
+  <meta name="description" content="自从升级到11系后，开启mysql无法关闭">
 <meta property="og:type" content="article">
-<meta property="og:title" content="记录一次网站渗透">
-<meta property="og:url" content="http://yoursite.com/2016/09/26/demo160926/index.html">
+<meta property="og:title" content="Mac下重装Mysql">
+<meta property="og:url" content="http://yoursite.com/2017/03/29/demo170329/index.html">
 <meta property="og:site_name" content="梦之河上 | 一页扁舟">
-<meta property="og:description" content="每个人心中都有个黑客梦">
-<meta property="og:image" content="http://p1.bqimg.com/4851/6b269e493fa530c9.png">
-<meta property="og:image" content="http://p1.bqimg.com/4851/f9f6b1271c5b3251.png">
-<meta property="og:updated_time" content="2016-12-06T08:51:24.000Z">
+<meta property="og:description" content="自从升级到11系后，开启mysql无法关闭">
+<meta property="og:updated_time" content="2017-03-29T15:37:07.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="记录一次网站渗透">
-<meta name="twitter:description" content="每个人心中都有个黑客梦">
-<meta name="twitter:image" content="http://p1.bqimg.com/4851/6b269e493fa530c9.png">
+<meta name="twitter:title" content="Mac下重装Mysql">
+<meta name="twitter:description" content="自从升级到11系后，开启mysql无法关闭">
   
     <link rel="alternative" href="/atom.xml" title="梦之河上 | 一页扁舟" type="application/atom+xml">
   
@@ -237,11 +234,11 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-demo160926" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-demo170329" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/09/26/demo160926/" class="article-date">
-      <time datetime="2016-09-26T13:52:29.000Z" itemprop="datePublished">2016-09-26</time>
+      <a href="/2017/03/29/demo170329/" class="article-date">
+      <time datetime="2017-03-29T15:09:11.000Z" itemprop="datePublished">2017-03-29</time>
 </a>
     </div>
   
@@ -254,7 +251,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      记录一次网站渗透
+      Mac下重装Mysql
     </h1>
   
 
@@ -265,7 +262,7 @@
 
         
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/渗透学习/">渗透学习</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Mac/">Mac</a></li></ul>
     </div>
 
         <div class="clearfix"></div>
@@ -275,15 +272,24 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>每个人心中都有个黑客梦</p>
+        <p>自从升级到11系后，开启mysql无法关闭</p>
 <a id="more"></a>
-<!--<center>
-<video src='http://ohnjxnr79.bkt.clouddn.com/%5B720P%5D%20%E5%BC%A0%E5%AD%A6%E5%8F%8B%E3%80%8A%E4%B8%80%E5%8D%83%E4%B8%AA%E4%BC%A4%E5%BF%83%E7%9A%84%E7%90%86%E7%94%B1%E3%80%8B.mp4' type='video/mp4' controls='controls' autoplay="autoplay" width='100%' height='100%'>
-</video>
-</center>-->
-<h2 id="网站渗透测试之sql注入"><a href="#网站渗透测试之sql注入" class="headerlink" title="网站渗透测试之sql注入"></a>网站渗透测试之sql注入</h2><h3 id="自从学习计算机开始，便对渗透测试很感兴趣，曾经在图书馆的局域网内做过ARP毒化和DNS欺骗的简单局域网渗透测试，黑掉了那八楼百十台电脑（PS：抱歉哈哈），另外由于时间的关系一直没有将自己的想法付诸实践。"><a href="#自从学习计算机开始，便对渗透测试很感兴趣，曾经在图书馆的局域网内做过ARP毒化和DNS欺骗的简单局域网渗透测试，黑掉了那八楼百十台电脑（PS：抱歉哈哈），另外由于时间的关系一直没有将自己的想法付诸实践。" class="headerlink" title="自从学习计算机开始，便对渗透测试很感兴趣，曾经在图书馆的局域网内做过ARP毒化和DNS欺骗的简单局域网渗透测试，黑掉了那八楼百十台电脑（PS：抱歉哈哈），另外由于时间的关系一直没有将自己的想法付诸实践。"></a>自从学习计算机开始，便对渗透测试很感兴趣，曾经在图书馆的局域网内做过ARP毒化和DNS欺骗的简单局域网渗透测试，黑掉了那八楼百十台电脑（PS：抱歉哈哈），另外由于时间的关系一直没有将自己的想法付诸实践。</h3><h3 id="开学初，突然想把关于网站的渗透来开个头，无奈没有良好的学习资源（毕竟那是个相对封闭的圈子）还有就是没有大牛带我，从找sql注入点，拿网站，到上传大小马，都要一步步摸索自己理解（尴尬，😄），最后贴几张半成品（没有提到服务器的权，也懒得去旁注了）"><a href="#开学初，突然想把关于网站的渗透来开个头，无奈没有良好的学习资源（毕竟那是个相对封闭的圈子）还有就是没有大牛带我，从找sql注入点，拿网站，到上传大小马，都要一步步摸索自己理解（尴尬，😄），最后贴几张半成品（没有提到服务器的权，也懒得去旁注了）" class="headerlink" title="开学初，突然想把关于网站的渗透来开个头，无奈没有良好的学习资源（毕竟那是个相对封闭的圈子）还有就是没有大牛带我，从找sql注入点，拿网站，到上传大小马，都要一步步摸索自己理解（尴尬，😄），最后贴几张半成品（没有提到服务器的权，也懒得去旁注了）"></a>开学初，突然想把关于网站的渗透来开个头，无奈没有良好的学习资源（毕竟那是个相对封闭的圈子）还有就是没有大牛带我，从找sql注入点，拿网站，到上传大小马，都要一步步摸索自己理解（尴尬，😄），最后贴几张半成品（没有提到服务器的权，也懒得去旁注了）</h3><p><center><br><img src="http://p1.bqimg.com/4851/6b269e493fa530c9.png" alt="sqlmap跑后台"><br><img src="http://p1.bqimg.com/4851/f9f6b1271c5b3251.png" alt="进入后台"><br></center></p>
-<hr>
-<h2 id="问题小结喽"><a href="#问题小结喽" class="headerlink" title="问题小结喽"></a>问题小结喽</h2><h3 id="另外就是当我们拿到网站后台时，往往后台会对我们上传文件会有限制，所以我们上传小马（一句话后门，可用中国菜刀直连）时，要做一些处理，可以上传图片木马。需要在小马文件中添加GIF89a，这是为了解决网站后台对非图片的过滤，可能还需要对小马后缀处理，具体要查看网页源码，分析图片过滤的逻辑是什么。（纯属学习记录帖）"><a href="#另外就是当我们拿到网站后台时，往往后台会对我们上传文件会有限制，所以我们上传小马（一句话后门，可用中国菜刀直连）时，要做一些处理，可以上传图片木马。需要在小马文件中添加GIF89a，这是为了解决网站后台对非图片的过滤，可能还需要对小马后缀处理，具体要查看网页源码，分析图片过滤的逻辑是什么。（纯属学习记录帖）" class="headerlink" title="另外就是当我们拿到网站后台时，往往后台会对我们上传文件会有限制，所以我们上传小马（一句话后门，可用中国菜刀直连）时，要做一些处理，可以上传图片木马。需要在小马文件中添加GIF89a，这是为了解决网站后台对非图片的过滤，可能还需要对小马后缀处理，具体要查看网页源码，分析图片过滤的逻辑是什么。（纯属学习记录帖）"></a>另外就是当我们拿到网站后台时，往往后台会对我们上传文件会有限制，所以我们上传小马（一句话后门，可用中国菜刀直连）时，要做一些处理，可以上传图片木马。需要在小马文件中添加GIF89a，这是为了解决网站后台对非图片的过滤，可能还需要对小马后缀处理，具体要查看网页源码，分析图片过滤的逻辑是什么。（纯属学习记录帖）</h3>
+<h2 id="自从系统升到11系后，mysql服务开启无法关闭"><a href="#自从系统升到11系后，mysql服务开启无法关闭" class="headerlink" title="自从系统升到11系后，mysql服务开启无法关闭"></a>自从系统升到11系后，mysql服务开启无法关闭</h2><p>mysql安装并不是一个难事，此贴只是日常记录。由于mysql安装的时代，我的macOS尚且是10.9系统，经历了两代系统升级到11系后，mysql服务一直是能开不能关，最后只能强关电脑，但是我还是忍了大半年，因为种种原因吧，现在终于到了忍不的地步了，shit！</p>
+<h2 id="看了下，目前对于这种情况唯一办法就是重装（毕竟是一个好装不好卸的软件，配置文件太多）"><a href="#看了下，目前对于这种情况唯一办法就是重装（毕竟是一个好装不好卸的软件，配置文件太多）" class="headerlink" title="看了下，目前对于这种情况唯一办法就是重装（毕竟是一个好装不好卸的软件，配置文件太多）"></a>看了下，目前对于这种情况唯一办法就是重装（毕竟是一个好装不好卸的软件，配置文件太多）</h2><h3 id="首先直接上干货-完全卸载"><a href="#首先直接上干货-完全卸载" class="headerlink" title="首先直接上干货(完全卸载)"></a>首先直接上干货(完全卸载)</h3><blockquote>
+<p>sudo rm /usr/local/mysql</p>
+<p>sudo rm -rf /usr/local/mysql*</p>
+<p>sudo rm -rf /Library/StartupItems/MySQLCOM</p>
+<p>sudo rm -rf /Library/PreferencePanes/My*</p>
+<p>sudo rm -rf /Library/Receipts/mysql*</p>
+<p>sudo rm -rf /Library/Receipts/MySQL*</p>
+<p>sudo rm -rf /var/db/receipts/com.mysql.*</p>
+</blockquote>
+<h3 id="安装的话，可以直接安装dmg文件，也可以下载二进制文件，用homebrew安装。"><a href="#安装的话，可以直接安装dmg文件，也可以下载二进制文件，用homebrew安装。" class="headerlink" title="安装的话，可以直接安装dmg文件，也可以下载二进制文件，用homebrew安装。"></a>安装的话，可以直接安装dmg文件，也可以下载二进制文件，用homebrew安装。</h3><ol>
+<li>最重要的是要记住一开始的初始密码</li>
+<li>mysql -uroot -p yourpassword</li>
+<li>SET PASSWORD FOR ‘root’@’localhost’ = PASSWORD(‘newpass’);</li>
+</ol>
+
       
     </div>
     
@@ -291,13 +297,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2016/09/26/demo160926/">记录一次网站渗透</a></p>
+        <p><span>本文标题:</span><a href="/2017/03/29/demo170329/">Mac下重装Mysql</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 Demo 的个人博客">Demo</a></p>
-        <p><span>发布时间:</span>2016年09月26日 - 21时52分</p>
-        <p><span>最后更新:</span>2016年12月06日 - 16时51分</p>
+        <p><span>发布时间:</span>2017年03月29日 - 23时09分</p>
+        <p><span>最后更新:</span>2017年03月29日 - 23时37分</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2016/09/26/demo160926/" title="记录一次网站渗透">http://yoursite.com/2016/09/26/demo160926/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2016/09/26/demo160926/　　作者: Demo" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2017/03/29/demo170329/" title="Mac下重装Mysql">http://yoursite.com/2017/03/29/demo170329/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2017/03/29/demo170329/　　作者: Demo" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script src="/js/clipboard.min.js"></script>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
@@ -310,18 +316,9 @@
 
 <nav id="article-nav">
   
-    <a href="/2016/10/07/demo161007/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          博客添加腾讯404，百度统计和百度sitemap
-        
-      </div>
-    </a>
   
-  
-    <a href="/2016/09/17/demo160917/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">无限期拖延症终于要拾起python学习</div>
+    <a href="/2017/02/26/demo170226/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">关于博客的SSH</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -332,7 +329,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#网站渗透测试之sql注入"><span class="toc-number">1.</span> <span class="toc-text">网站渗透测试之sql注入</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#自从学习计算机开始，便对渗透测试很感兴趣，曾经在图书馆的局域网内做过ARP毒化和DNS欺骗的简单局域网渗透测试，黑掉了那八楼百十台电脑（PS：抱歉哈哈），另外由于时间的关系一直没有将自己的想法付诸实践。"><span class="toc-number">1.1.</span> <span class="toc-text">自从学习计算机开始，便对渗透测试很感兴趣，曾经在图书馆的局域网内做过ARP毒化和DNS欺骗的简单局域网渗透测试，黑掉了那八楼百十台电脑（PS：抱歉哈哈），另外由于时间的关系一直没有将自己的想法付诸实践。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#开学初，突然想把关于网站的渗透来开个头，无奈没有良好的学习资源（毕竟那是个相对封闭的圈子）还有就是没有大牛带我，从找sql注入点，拿网站，到上传大小马，都要一步步摸索自己理解（尴尬，😄），最后贴几张半成品（没有提到服务器的权，也懒得去旁注了）"><span class="toc-number">1.2.</span> <span class="toc-text">开学初，突然想把关于网站的渗透来开个头，无奈没有良好的学习资源（毕竟那是个相对封闭的圈子）还有就是没有大牛带我，从找sql注入点，拿网站，到上传大小马，都要一步步摸索自己理解（尴尬，😄），最后贴几张半成品（没有提到服务器的权，也懒得去旁注了）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#问题小结喽"><span class="toc-number">2.</span> <span class="toc-text">问题小结喽</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#另外就是当我们拿到网站后台时，往往后台会对我们上传文件会有限制，所以我们上传小马（一句话后门，可用中国菜刀直连）时，要做一些处理，可以上传图片木马。需要在小马文件中添加GIF89a，这是为了解决网站后台对非图片的过滤，可能还需要对小马后缀处理，具体要查看网页源码，分析图片过滤的逻辑是什么。（纯属学习记录帖）"><span class="toc-number">2.1.</span> <span class="toc-text">另外就是当我们拿到网站后台时，往往后台会对我们上传文件会有限制，所以我们上传小马（一句话后门，可用中国菜刀直连）时，要做一些处理，可以上传图片木马。需要在小马文件中添加GIF89a，这是为了解决网站后台对非图片的过滤，可能还需要对小马后缀处理，具体要查看网页源码，分析图片过滤的逻辑是什么。（纯属学习记录帖）</span></a></li></ol></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#自从系统升到11系后，mysql服务开启无法关闭"><span class="toc-number">1.</span> <span class="toc-text">自从系统升到11系后，mysql服务开启无法关闭</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#看了下，目前对于这种情况唯一办法就是重装（毕竟是一个好装不好卸的软件，配置文件太多）"><span class="toc-number">2.</span> <span class="toc-text">看了下，目前对于这种情况唯一办法就是重装（毕竟是一个好装不好卸的软件，配置文件太多）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#首先直接上干货-完全卸载"><span class="toc-number">2.1.</span> <span class="toc-text">首先直接上干货(完全卸载)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装的话，可以直接安装dmg文件，也可以下载二进制文件，用homebrew安装。"><span class="toc-number">2.2.</span> <span class="toc-text">安装的话，可以直接安装dmg文件，也可以下载二进制文件，用homebrew安装。</span></a></li></ol></li></ol>
 </div>
 <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
 
@@ -380,7 +377,7 @@
     
       <div class="duoshuo" id="comments">
     <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="2016/09/26/demo160926/" data-title="记录一次网站渗透" data-url="http://yoursite.com/2016/09/26/demo160926/"></div>
+    <div class="ds-thread" data-thread-key="2017/03/29/demo170329/" data-title="Mac下重装Mysql" data-url="http://yoursite.com/2017/03/29/demo170329/"></div>
     <!-- 多说评论框 end -->
     <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
     <script type="text/javascript">
@@ -403,13 +400,11 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2016/10/07/demo161007/" title="上一篇: 博客添加腾讯404，百度统计和百度sitemap">
-                <i class="fa fa-angle-left"></i>
-            </a>
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
         
-            <a href="/2016/09/17/demo160917/" title="下一篇: 无限期拖延症终于要拾起python学习">
+            <a href="/2017/02/26/demo170226/" title="下一篇: 关于博客的SSH">
                 <i class="fa fa-angle-right"></i>
             </a>
         
