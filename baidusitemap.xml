@@ -4,6 +4,23 @@
 
     
   <url>
+    <loc>http://yoursite.com/2017/02/26/demo170226/</loc>
+    <lastmod>2017-04-14T14:41:04.000Z</lastmod>
+    <data>
+        <display>
+        <title>关于博客的SSH</title>
+        <pubTime>2017-02-25T16:12:51.000Z</pubTime>
+        
+        <tag>博客运维</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2017/03/29/demo170329/</loc>
     <lastmod>2017-03-30T11:54:32.000Z</lastmod>
     <data>
@@ -80,23 +97,6 @@
         <pubTime>2017-02-25T15:32:16.000Z</pubTime>
         
         <tag>java web开发</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2017/02/26/demo170226/</loc>
-    <lastmod>2017-02-27T05:28:48.000Z</lastmod>
-    <data>
-        <display>
-        <title>关于博客的SSH</title>
-        <pubTime>2017-02-25T16:12:51.000Z</pubTime>
-        
-        <tag>博客运维</tag>
          
          
            
